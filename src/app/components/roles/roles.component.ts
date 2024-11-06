@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './roles.component.css'
 })
 export class RolesComponent {
+  firstName: string = "Angular Tutorial";
 
+  version: number = 17;
+
+  isActive: boolean = false;
+
+  currentDate: Date = new Date();
 }
