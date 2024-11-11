@@ -11,11 +11,27 @@
     <div class="col-3">
         <p> {{ isActive }} </p>
     </div>
+
+    <div class="col-3">
+        <p> {{ selectedCounty }} </p>
+    </div>
 </div>
 
 <div class="row">
     <div class="col-3">
         <input type="text" name="" [value]="firstName" class="form-control" id="">
+    </div>
+
+    <div class="col-3">
+        <input type="text" name="" [(ngModel)]="firstName" class="form-control" id="">
+    </div>
+
+    <div class="col-3">
+        <select [(ngModel)] = "selectedCounty" >
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kajiado">Kajiado</option>
+        </select>
     </div>
 </div>
 
