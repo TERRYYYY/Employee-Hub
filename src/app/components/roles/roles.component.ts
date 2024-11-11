@@ -18,4 +18,12 @@ export class RolesComponent {
   currentDate: Date = new Date();
 
   selectedCounty: string = " ";
+
+  showWelcomeAlert(){
+    alert ("Welcome to Angular Tutorial");
+  }
+
+  showMessage(message: string){
+    alert(message);
+  }
 }
